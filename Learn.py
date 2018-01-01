@@ -32,3 +32,17 @@ from datetime import datetime
 print "\n4. DATE & TIME LIBRARY"
 print "Print the current date & time: " + str(datetime.now())
 print "Print the current dd/mm/year: %s/%s/%s" % (datetime.now().day, datetime.now().month, datetime.now().year)
+
+#Conditional statements.
+#The following the_random_function() returns True.
+def the_random_function():
+    if 3==3 and 2<3 and 3<=3 and 3!=4 or 5>4 or 5>=4:
+      print "\n5. CONDITIONAL STATEMENTS" #Start coding here!
+      print "the_random_function() is - True."
+        #Don't forget to indent the code inside this block!
+    elif not 2>3:
+      print "This is false"
+    else:
+      print "The end"
+        #You'll have to call the_random_function() to execute it.
+the_random_function()
