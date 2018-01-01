@@ -1,6 +1,6 @@
 #This is a comment. The python interpreter runs your code line by line, and checks for any errors.
 '''This is a multi-line comment. You can't use these beside lines of code, but you can use #'''
-'''Python is best on Visual Studio Code. Enable the integrated terminal using {Control + `} on Mac'''
+'''Python is best on Visual Studio Code. Enable the integrated terminal using {Control + `} on Mac.'''
 
 '''This is how you store and print from variables.'''
 print "\n1. VARIABLES IN PYTHON"
