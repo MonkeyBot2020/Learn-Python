@@ -28,7 +28,7 @@ print "String formatting using %s - " + "The %s who %s %s!" % ("Knights", "say",
 #Methods that use dot notation (such as 'String'.upper() or 'String'.lower()) only work with strings. On the other hand, len(string) and str(object) can work on other data types.
 
 #Importing methods from the datetime library.
-from datetime import datetime
+from datetime import datetime #Import module 'datetime' from library 'datetime'.
 print "\n4. DATE & TIME LIBRARY"
 print "Print the current date & time: " + str(datetime.now())
 print "Print the current dd/mm/year: %s/%s/%s" % (datetime.now().day, datetime.now().month, datetime.now().year)
@@ -46,3 +46,25 @@ def the_random_function():
       print "The end"
         #You'll have to call the_random_function() to execute it.
 the_random_function()
+
+#Importing functions from modules.
+import math #Generic import of the MATH module.
+print math.sqrt(25) #This tells Python not only to import math, but to get the sqrt() function from within math.
+everything = dir(math) #Sets everything to a list of things from math
+print everything #Prints 'em all!
+
+from math import sqrt
+print sqrt(25) #It's possible to import only certain variables or functions from a given module. Pulling in just a single function from a module is called a function import, and it's done with the from keyword.
+
+from math import * #Universal import statement to import all functions.
+print max(2,5,18) #The max() function takes any number of arguments and returns the largest one. 
+print min(2,4,61) #Returns the smallest of a given series of arguments.
+print abs(-42) #Returns the absolute value of the number it takes as an argument.
+print type(42) #Returns the type of the data it receives as an argument.
+
+def distance_from_zero(s):
+  if type(s) == int or type(s) == float:
+    return abs(s)
+  else:
+    return('Nope')
+print distance_from_zero(-42)
